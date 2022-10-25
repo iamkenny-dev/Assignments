@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Sign Up</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="signup-container">
+    <div class="signup-box">
+      <h1>Sign Up</h1>
+      <h4>It's free and only takes a minute</h4>
+      <form action="signupsuccess.html" method="POST">
+        <label for="firstname">First Name</label>
+        <input type="text" name="firstname" placeholder="First Name" id="firstname" required />
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" placeholder="Last Name" id="lastname" required />
+        <label for="number">Phone Number</label>
+        <input type='number' id="number" required />
+
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="Email" required />
+        <label for="gender">Gender</label>
+        <select id="gender" required>
+          <option>Choose...</option>
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+        <label for="dob">Date of birth</label>
+        <input type='date' name="dob" id="dob" />
+        <label for="color">Favorite color</label>
+        <input type="color" name="color" id="color" />
+        <label for="password">Password</label>
+        <input type="password" minlength="8" name="password" placeholder="Password" id="password" required />
+        <label for="cpassword">Confirm Password</label>
+        <input type="password" minlength="8" name="cpassword" placeholder="Confirm Password" required />
+        <!--         <input type="button" name="submit" value="Submit" class="button" /> -->
+        <button type="submit" class="button" value="submit">Submit</button>
+      </form>
+      <!--       <p>
+        By clicking the Sign Up button,you agree to our <br />
+        <a href="#">Terms and Condition</a> and <a href="#">Policy Privacy</a> -->
+      <!--       </p> -->
+    </div>
+    <p class="para-2">
+      Already have an account? <a href="login.html"><strong>Login here</strong></a>
+    </p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="login-container">
+    <div class="login-box">
+      <h1>Login</h1>
+      <form action="loginsuccess.html" method="POST">
+        <label for="email">Email</label>
+        <input type="email" name='email' placeholder="Email" name="email" id="email" required />
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="Password" id='password' minlength="8" name="password"
+          id="password" required />
+        <button type="submit" class="button" value="submit">Submit</button>
+        <!--         <input type="button" name="submit" value="Submit" class="button" /> -->
+      </form>
+    </div>
+    <p class="para-2">
+      Not have an account? <a href="index.html">Sign Up Here</a>
+    </p>
+  </div>
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>
+<!-- 
+Create the following pages using HTML CSS
+
+Registration page
+Login page
+Success register page
+Your section of the registration page should include
+
+First name 
+Last name
+Phone number
+Email 
+Gender (select field)
+Date of birth (date selection option)
+Favorite color (color selector)
+Your section of the login page should include
+
+Email and
+password
+If the user uses the correct format for email and password, the user should be navigated to the success page.
+
+Hint Searching for designs online will give you a better understanding of a beautiful design. -->
