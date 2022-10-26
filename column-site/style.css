@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@200;300;400&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Big Shoulders Display";
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+.box {
+  height: 25rem;
+  width: 15rem;
+  padding: 2.2em;
+  Font size: 15px;
+}
+
+.first-box {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 1em 0em 0em 1em;
+}
+
+.first-box button {
+  color: hsl(31, 77%, 52%);
+  padding: 0.6em;
+  border-radius: 2em;
+  width: 8em;
+  border: none;
+  margin-top: 3em;
+  background-color:  hsl(0, 0%, 95%);
+}
+
+.second-box {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.second-box button {
+  color: hsl(184, 100%, 22%);
+  padding: 0.6em;
+  border-radius: 2em;
+  width: 8em;
+  border: none;
+  margin-top: 3em;
+  background-color:  hsl(0, 0%, 95%);
+}
+
+.third-box {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0em 1em 1em 0em;
+}
+
+.third-box button {
+  color: hsl(179, 100%, 13%);
+  padding: 0.6em;
+  border-radius: 2em;
+  width: 8em;
+  border: none;
+  margin-top: 3em;
+  background-color:  hsl(0, 0%, 95%);
+}
+
+button,
+p {
+  margin-top: 20px;
+}
+
+h1 {
+    color:  hsl(0, 0%, 95%);
+    margin-top: 1em;
+    font-weight: 700;
+}
+
+p {
+    line-height: 2;
+    color: hsla(0, 0%, 100%, 0.75);
+    
+}
+
+@media (max-width: 375px) {
+    .container {
+  display: flex;
+  
+  }
+    .first-box {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 1em 1em 0em 0em;
+}
+.third-box {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0em 0em 1em 1em;
+}
+}
+
+@media (max-width: 790px) {
+    .container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  }
+    .first-box {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 1em 1em 0em 0em;
+}
+.third-box {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0em 0em 1em 1em;
+}
+}
+
+
+
+.btn {
+  position absolute;
+  margin-left: 23em;
+  margin-top: -60rem;
+}
+
+.btn > button {
+  padding: 1em;
+  color: green;
+  background-color: yellow;
+}

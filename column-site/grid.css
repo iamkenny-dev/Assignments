@@ -1,0 +1,53 @@
+body {
+  background-color: black;
+  margin: 20px;
+  display: grid;
+  place-content: center;
+  padding-top: 100px;
+}
+.container {
+  display: grid;
+  background-color: black;
+  grid-template-areas:
+    'first first first second second'
+    'first first first second second'
+    'third third fourth fourth fourth'
+    'third third fifth fifth fifth';
+  gap: 20px;
+  height: 500px;
+  width: 660px;
+}
+
+
+
+.first {
+  grid-area: first;
+  background-color: #fc4e03;
+}
+.second {
+  grid-area: second;
+  background-color: #fcb103;
+}
+.third {
+  grid-area: third;
+  background-color: #2a9c08;
+}
+.fourth {
+  grid-area: fourth;
+  background-color: #3091f2;
+}
+.fifth {
+  grid-area: fifth;
+  background-color: #3091f2;
+}
+
+@media (max-width: 375px) {
+  .container {
+    height: 200px;
+    width: 300px;
+  }
+}
+
+h1 a {
+  color: white;
+}
